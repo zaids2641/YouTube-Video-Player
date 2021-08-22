@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
 }
 
 section {
@@ -16,36 +13,36 @@ section {
 
 .main {
     position: absolute;
-    background: #181818;
+    top: 50%;
+    left: 50%;
     width: 60%;
     min-width: 480px;
     height: 29em;
     padding: 12px;
-    top: 50%;
-    left: 50%;
+    background: #181818;
     overflow: hidden;
-    transform: translate(-50%, -50%);  
+    transform: translate(-50%, -50%);
 }
 
-/* Styled Block */
+/* Styled Blocks */
 .styled-block-right {
     position: relative;
-    padding: 0;
-    background: #E48554;
     width: 100%;
     height: 100%;
+    padding: 0;
+    background: #E48554;
     overflow: hidden;
 }
 
 .styled-block-left {
-    border-bottom: 468px solid #262626;
-    border-left: 0px solid transparent;
-    border-right: 175px solid transparent;
-    height: 0;
-    width: 75%;
     position: absolute;
     top: -3px;
     left: -3px;
+    width: 75%;
+    height: 0;
+    border-bottom: 468px solid #262626;
+    border-left: 0px solid transparent;
+    border-right: 175px solid transparent;
 }
 
 /* Channel Logo */
@@ -53,67 +50,75 @@ section {
     position: absolute;
     top: 15%;
     right: 8%;
-    border: none;
     width: 155px;
     height: 155px;
     border-radius: 100%;
-    background: #0B0C10;
     padding: 12px;
+    background: #0B0C10;
 }
 
 .circle-inner {
     width: 100%;
     height: 100%;
+    border-radius: 100%;
     background: none;
     border: 7px #FEFEFE solid;
-    border-radius: 100%;
 }
+
 .circle-inner img {
-    -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
 }
 
 /* Arrow */
 .arrow {
-	position: relative;
+    position: relative;
+    width: 100%;
     margin-top: 15%;
-    margin-left: auto;
+    margin-left: 70.5%;
     margin-right: 18%;
-    width: 100px;
 }
+
 .arrow .curve {
-	border: 2px solid #FEFEFE;
-	border-color: transparent transparent transparent #FEFEFE;
-	height: 180px;
-	width: 1200px;
-	border-radius: 230px 0 0 150px;
+    height: 180px;
+    width: 1200px;
+    border: 2px solid #FEFEFE;
+    border-color: transparent transparent transparent #FEFEFE;
+    border-radius: 230px 0 0 150px;
 }
+
 .arrow .point {
-	position: absolute;
-	left: 40px;
-	top: 29%;
+    position: absolute;
+    left: 38px;
+    top: 29%;
 }
+
 .arrow .point:before, .arrow .point:after {
-	border: 1px solid #FEFEFE;
-	height: 25px;
-	content: "";
-	position: absolute;
+    content: "";
+    position: absolute;
+    border: 1px solid #FEFEFE;
+    height: 25px;
 }
+
+
 .arrow .point:before {
-	top: -19px;
-	left: -8px;
-	transform:rotate(-190deg);
-	-webkit-transform:rotate(-190deg);
-    -moz-transform:rotate(-190deg);
-    -ms-transform: rotate(-190deg);
+    top: -19px;
+    left: -8px;
+    transform: rotate(190deg);
+    -webkit-transform: rotate(190deg);
+    -moz-transform: rotate(190deg);
+    -ms-transform: rotate(190deg);
 }
+
 .arrow .point:after {
-  top: -32px;
-	left: -25px;
-	transform:rotate(-92deg);
-	-webkit-transform: rotate(-92deg);
-  -moz-transform:rotate(-92deg);
-  -ms-transform: rotate(-92deg);
+    top: -32px;
+    left: -20px;
+    transform: rotate(-92deg);
+    -webkit-transform: rotate(-92deg);
+    -moz-transform: rotate(-92deg);
+    -ms-transform: rotate(-92deg);
 }
 
 /* Subscribe */
@@ -125,9 +130,11 @@ section {
     height: 125px;
     text-align: center;
 }
+
 .subscribe h2 {
     color: #FEFEFE;
 }
+
 .subscribe button {
     border: none;
     padding: 4px 8px;
@@ -135,11 +142,13 @@ section {
     margin-top: 15px;
     background: #FEFEFE;
     color: #DD8152;
-    z-index: 99999999999;
+    z-index: 9999;
 }
-.subscribe button:hover {
+
+.subscribe button:hover{
     cursor: pointer;
 }
+
 .subscribe button:focus {
     outline: none;
 }
@@ -147,12 +156,13 @@ section {
 /* Content Block */
 .content-block {
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
-    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
 }
+
 .content-container {
     width: 100%;
     height: 385px;
@@ -162,72 +172,83 @@ section {
 .content-styled-border {
     position: relative;
     margin: 0 auto;
-    width: 50%;
-    height: 10rem;
+    width:50%;
+    height: 10.2rem;
     padding: 8px 18px;
-  }
-  .content-styled-border .border-top,  .content-styled-border .border-bottom {
+}
+
+.content-styled-border .border-top, .content-styled-border .border-bottom {
     position: absolute;
     width: 15px;
     height: 100%;
-  }  
-  .content-styled-border .border-top {
+}
+
+.content-styled-border .border-top {
     top: 0;
     border-top: 2px white solid;
-  }  
-  .content-styled-border .border-bottom {
+}
+
+.content-styled-border .border-bottom {
     bottom: 0;
     border-bottom: 2px white solid;
-  }  
-  .content-styled-border .border-left {
+}
+
+.content-styled-border .border-left {
     left: 0;
     border-left: 2px white solid;
-  }  
-  .content-styled-border .border-right {
+}
+
+.content-styled-border .border-right {
     right: 0;
     border-right: 2px white solid;
-  }
+}
 
 /* Video Frame */
-.viedo-frame {
+.video-frame {
     width: 100%;
     height: 100%;
 }
 
-/* Previous Button */
+/* Previous */
 .left, h1, button {
     text-align: center;
 }
+
 .left {
     width: 60%;
     height: 100%;
     padding-top: 65px;
 }
+
 .left h1 {
-    color: #FFFFFF
+    color: #FEFEFE;
 }
+
 .left h1:nth-child(1) {
     font-weight: 100;
     font-size: 1.5em;
 }
+
 .left h1:nth-child(2) {
     font-size: 2.3em;
 }
+
 .left button {
-    margin-top: 25px;
-    background: #E48554;
-    padding: 8px 10px 8px 10px;
     font-size: 1em;
     font-weight: 400;
     color: #262626;
+    margin-top: 25px;
+    background: #E48554;
+    padding: 8px 10px 8px 10px;
     border: none;
 }
+
 .left button:hover {
     cursor: pointer;
 }
+
 .left button:focus {
     outline: none;
-
 }
 
 /* Controls */
@@ -238,13 +259,15 @@ section {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .progress {
     position: relative;
     width: 100%;
     height: 4px;
     border-radius: 50%;
-    background: #e0e0e063;
+    background: #E0E0E063;
 }
+
 .progress::after {
     content: "";
     position: absolute;
@@ -254,6 +277,7 @@ section {
     border-bottom-right-radius: 5px;
     background: #FF0000;
 }
+
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -268,11 +292,12 @@ section {
     width: 35%;
     padding: 12px 0 0 15px;
 }
+
 .right-pane {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px 0 5px;
+    padding: 0 15px 0 15px;
     width: 35%;
 }
 
@@ -291,6 +316,7 @@ section {
     height: 20px;
     overflow: hidden;
 }
+
 .triangle {
     width: 0;
     height: 0;
@@ -303,22 +329,25 @@ section {
 .speaker {
     display: flex;
 }
-.square {    
+
+.square {
     display: flex;
     width: 8px;
     height: 8px;
     margin-top: 7px;
     background: #E8E8E8;
 }
+
 .cone {
     width: 0;
     height: 0;
-    margin-top: 0.1rem;
+    margin-top: 0.08rem;
     margin-left: -0.3rem;
     border-top: 10px solid transparent;
     border-right: 10px solid #E8E8E8;
     border-bottom: 10px solid transparent;
 }
+
 .half-circle {
     width: 20px;
     height: 20px;
@@ -327,14 +356,16 @@ section {
     background: #E8E8E8;
     padding-top: 3px;
 }
+
 .inner-half-circle {
     width: 14px;
     height: 14px;
     margin: 0 auto;
     border-radius: 100%;
     background: none;
-    border: 2px black solid;    
+    border: 2px black solid;
 }
+
 .circle-container {
     width: 10px;
     height: 20px;
@@ -342,6 +373,9 @@ section {
     margin-left: 2px;
     overflow: hidden;
     transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
 }
 
 /* Time Display */
@@ -349,6 +383,7 @@ section {
     height: 20px;
     margin: 0 5px 0 15px;
 }
+
 .time-inner {
     padding-top: 2px;
     height: 20px;
@@ -365,23 +400,30 @@ section {
     border-radius: 10px;
     background: rgba(232, 232, 232, 0.5);
 }
+
 .auto-play .slider .slider-button {
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: -2px;
+    margin-top: -3.4px;
     width: 15px;
     height: 15px;
     border-radius: 100%;
     background: rgb(232, 232, 232);
 }
-.auto-play .slider .slider-button .slider-triangle {    
+
+.auto-play .slider .slider-button .slider-triangle {
     width: 0;
     height: 0;
-    margin: 4px auto;
+    margin-top: 3.5px;
+    margin-left: 6.3px;
     border-top: 4px solid transparent;
-    border-left: 5px solid #412416;
+    border-left: 4px solid #412416;
     border-bottom: 4px solid transparent;
+}
+
+.auto-play:hover .slider-button {
+    cursor: pointer;
 }
 
 /* Caption */
@@ -389,8 +431,9 @@ section {
     background: rgb(232, 232, 232);
     height: 15px;
     border-radius: 3px;
-    padding: 2px;
+    padding: 1px;
 }
+
 .styled-caption h3 {
     font-size: 0.7em;
     color: #412416;
@@ -400,42 +443,46 @@ section {
 .settings {
     display: flex;
 }
+
 .gears {
     position: relative;
     width: 15px;
     height: 15px;
     background: #fff;
     border-radius: 50%;
-  }
+}
 
-.gears .center{
+.gears .center {
     position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 0.219em;
-    margin-left: 0.195em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 10;
     width: 8px;
     height: 8px;
     background: #262626;
     border-radius: 50%;
 }
-.tooth{
+
+.tooth {
     position: absolute;
     top: -0.11em;
     left: 0.33em;
     z-index: 1;
     width: 3px;
     height: 19px;
-    background:#fff;
+    background: #FFF;
 }
-.tooth:nth-child(2){
+
+.tooth:nth-child(2) {
     transform: rotate(45deg);
-}  
-.tooth:nth-child(3){
+}
+
+.tooth:nth-child(3) {
     transform: rotate(90deg);
-}  
-.tooth:nth-child(4){
+}
+
+.tooth:nth-child(4) {
     transform: rotate(135deg);
 }
 
@@ -446,15 +493,20 @@ section {
     width: 25px;
     height: 18px;
 }
+
 .toggle-view-inner {
     position: absolute;
-    background: #E8E8E8;
+    width: 10px;
+    height: 8px;
     bottom: 0;
     right: 0;
     margin-right: 2px;
-    margin-bottom: 2px;
-    width: 10px;
-    height: 8px;    
+    margin-bottom: 3px;
+    background: #E8E8E8;
+}
+
+.toggle-view:hover {
+    cursor: pointer;
 }
 
 /* Theater Mode */
@@ -465,34 +517,40 @@ section {
 }
 
 /* Styled Border */
- .styled-border {
+.styled-border {
     position: relative;
     width: 25px;
-    height: 18px;
-  }  
- .styled-border .border-top,  .styled-border .border-bottom {
+    height: 18px;    
+}
+
+.styled-border .border-top, .styled-border .border-bottom {
     position: absolute;
     width: 5px;
     height: 5px;
-  }  
- .styled-border .border-top {
+}
+
+.styled-border .border-top {
     top: 0;
-    border-top: 2px white solid;
-  }  
- .styled-border .border-bottom {
+    border-top: 2px white solid;    
+}
+
+.styled-border .border-bottom {
     bottom: 0;
     border-bottom: 2px white solid;
-  }  
- .styled-border .border-left {
+}
+
+.styled-border .border-left {
     left: 0;
-    border-left: 2px white solid;
-  }  
- .styled-border .border-right {
+    border-left: 2px white solid;    
+}
+
+.styled-border .border-right {
     right: 0;
     border-right: 2px white solid;
-  }
+}
 
-  .progress:hover, .fforward:hover .triangle, .play-button:hover, .speaker:hover, .time:hover .time-inner, .auto-play .slider .slider-button, .caption:hover .styled-caption,
-  .settings:hover .gears, .toggle-view:hover, .theater-mode:hover, .styled-border:hover{
+
+/* On Hover Cursor Pointer */
+.progress:hover, .fforward:hover, .triangle, .play-button:hover, .speaker:hover, .time:hover .timer, .auto-play .slider .slider-button, .caption:hover .styled-caption, .settings:hover .gears, .toggle-view:hover, .theater-mode:hover, .styled-border:hover {
     cursor: pointer;
 }
