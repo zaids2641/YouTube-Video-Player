@@ -27,6 +27,7 @@ section {
     transform: translate(-50%, -50%);  
 }
 
+/* Styled Block */
 .styled-block-right {
     position: relative;
     padding: 0;
@@ -47,6 +48,7 @@ section {
     left: -3px;
 }
 
+/* Channel Logo */
 .circle {
     position: absolute;
     top: 15%;
@@ -70,6 +72,8 @@ section {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+
+/* Arrow */
 .arrow {
 	position: relative;
     margin-top: 15%;
@@ -112,6 +116,7 @@ section {
   -ms-transform: rotate(-92deg);
 }
 
+/* Subscribe */
 .subscribe {
     position: absolute;
     top: 52%;
@@ -139,6 +144,7 @@ section {
     outline: none;
 }
 
+/* Content Block */
 .content-block {
     position: absolute;
     width: 100%;
@@ -152,6 +158,7 @@ section {
     height: 385px;
 }
 
+/* Styled Border */
 .content-styled-border {
     position: relative;
     margin: 0 auto;
@@ -180,11 +187,14 @@ section {
     right: 0;
     border-right: 2px white solid;
   }
+
+/* Video Frame */
 .viedo-frame {
     width: 100%;
     height: 100%;
 }
 
+/* Previous Button */
 .left, h1, button {
     text-align: center;
 }
@@ -220,6 +230,7 @@ section {
 
 }
 
+/* Controls */
 .controls {
     padding-top: 0;
     width: 100%;
@@ -250,6 +261,7 @@ section {
     height: 50px;
 }
 
+/* Panes */
 .left-pane {
     display: flex;
     justify-content: space-between;
@@ -264,6 +276,7 @@ section {
     width: 35%;
 }
 
+/* Control Buttons */
 .play-button {
     width: 0;
     height: 0;
@@ -271,6 +284,8 @@ section {
     border-left: 15px solid #E8E8E8;
     border-bottom: 10px solid transparent;
 }
+
+/* Next Button */
 .fforward {
     border-right: 5px solid #E8E8E8;
     height: 20px;
@@ -284,6 +299,7 @@ section {
     border-bottom: 10px solid transparent;
 }
 
+/* Speaker */
 .speaker {
     display: flex;
 }
@@ -327,6 +343,8 @@ section {
     overflow: hidden;
     transform: rotate(180deg);
 }
+
+/* Time Display */
 .time {
     height: 20px;
     margin: 0 5px 0 15px;
@@ -366,6 +384,7 @@ section {
     border-bottom: 4px solid transparent;
 }
 
+/* Caption */
 .caption {
     background: rgb(232, 232, 232);
     height: 15px;
@@ -377,6 +396,7 @@ section {
     color: #412416;
 }
 
+/* Settings */
 .settings {
     display: flex;
 }
@@ -419,6 +439,7 @@ section {
     transform: rotate(135deg);
 }
 
+/* Toggle Fullscreen */
 .toggle-view {
     position: relative;
     border: 2px #E8E8E8 solid;
@@ -435,12 +456,15 @@ section {
     width: 10px;
     height: 8px;    
 }
+
+/* Theater Mode */
 .theater-mode {
     border: 2px #E8E8E8 solid;
     width: 25px;
     height: 18px;
 }
 
+/* Styled Border */
  .styled-border {
     position: relative;
     width: 25px;
