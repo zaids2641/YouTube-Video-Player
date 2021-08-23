@@ -98,15 +98,15 @@ section {
     top: 29%;
 }
 
-.arrow .point:before, .arrow .point:after {
+.arrow .point::before, .arrow .point:after {
     content: "";
     position: absolute;
     border: 1px solid #FEFEFE;
     height: 25px;
 }
 
-
 .arrow .point:before {
+    content: "";
     top: -19px;
     left: -8px;
     transform: rotate(190deg);
@@ -116,6 +116,7 @@ section {
 }
 
 .arrow .point:after {
+    content: "";
     top: -32px;
     left: -20px;
     transform: rotate(-92deg);
@@ -144,11 +145,10 @@ section {
     border-radius: 10px;
     margin-top: 15px;
     background: #FEFEFE;
-    color: #DD8152;
     z-index: 9999;
 }
 
-.subscribe button:hover{
+.subscribe button:hover {
     cursor: pointer;
 }
 
@@ -175,7 +175,7 @@ section {
 .content-styled-border {
     position: relative;
     margin: 0 auto;
-    width:50%;
+    width: 50%;
     height: 10.2rem;
     padding: 8px 18px;
 }
@@ -372,7 +372,7 @@ section {
 .circle-container {
     width: 10px;
     height: 20px;
-    margin-top: 1px;
+    margin-top: 1.4px;
     margin-left: 2px;
     overflow: hidden;
     transform: rotate(180deg);
@@ -391,7 +391,6 @@ section {
     padding-top: 2px;
     height: 20px;
     color: #E8E8E8;
-    font-size: 0.9em;
     text-align: center;
 }
 
@@ -425,9 +424,9 @@ section {
     border-bottom: 4px solid transparent;
 }
 
-.auto-play:hover .slider-button {
+/* .auto-play .slider-button {
     cursor: pointer;
-}
+} */
 
 /* Caption */
 .caption {
@@ -451,7 +450,7 @@ section {
     position: relative;
     width: 15px;
     height: 15px;
-    background: #fff;
+    background: #FFF;
     border-radius: 50%;
 }
 
@@ -508,9 +507,9 @@ section {
     background: #E8E8E8;
 }
 
-.toggle-view:hover {
+/* .toggle-view:hover {
     cursor: pointer;
-}
+} */
 
 /* Theater Mode */
 .theater-mode {
@@ -523,7 +522,7 @@ section {
 .styled-border {
     position: relative;
     width: 25px;
-    height: 18px;    
+    height: 18px;
 }
 
 .styled-border .border-top, .styled-border .border-bottom {
@@ -534,7 +533,7 @@ section {
 
 .styled-border .border-top {
     top: 0;
-    border-top: 2px white solid;    
+    border-top: 2px white solid;
 }
 
 .styled-border .border-bottom {
@@ -544,7 +543,7 @@ section {
 
 .styled-border .border-left {
     left: 0;
-    border-left: 2px white solid;    
+    border-left: 2px white solid;
 }
 
 .styled-border .border-right {
@@ -552,8 +551,6 @@ section {
     border-right: 2px white solid;
 }
 
-
-/* On Hover Cursor Pointer */
-.progress:hover, .fforward:hover, .triangle, .play-button:hover, .speaker:hover, .time:hover .timer, .auto-play .slider .slider-button, .caption:hover .styled-caption, .settings:hover .gears, .toggle-view:hover, .theater-mode:hover, .styled-border:hover {
+.progress:hover, .fforward:hover, .play-button:hover, .speaker:hover, .time:hover, .auto-play:hover, .caption:hover .styled-caption, .settings:hover .gears, .toggle-view:hover, .theater-mode:hover, .styled-border:hover {
     cursor: pointer;
 }
